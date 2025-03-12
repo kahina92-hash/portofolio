@@ -1,0 +1,30 @@
+footer {
+  background-color: rgba(20, 20, 20, 0.8); // Noir semi-transparent
+  color: white;
+  width: 100%;
+  height: 220px;
+  position: relative; // Important pour garder le bon positionnement
+  z-index: 1; // Reste au-dessus du fond étoilé
+
+  .footer-container {
+    display: flex;
+  justify-content: space-between;
+    height: 100%;
+    gap: 1rem;
+    margin: 1rem ;
+    
+  }
+
+  .logo-footer {
+    width: 222px;
+    filter: brightness(0) invert(1);
+  }
+
+  p {
+
+    font-size: 20px;
+    display: flex;
+   align-self: center;
+    margin: 10px 10px 10px;
+  }
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "1",
+    "title": "Portfolio",
+    "date": "Mars 2025",
+    "picture": "imagesProjets/projet-portofolio.png",
+    "description": "Créer et développer mon portfolio de développeur",
+    "langages": [
+      "React",
+      "JavaScript",
+      "SCSS"
+    ],
+    "lien":"https://github.com/Kahina24D/ArgentBank-Frontend.git"
+  },
+  {
+    "id": "2",
+    "title": "Argent Bank",
+    "date": "feverier 2025",
+    "picture": "imagesProjets/projet-argent-bank.png",
+    "description": "Un projet bancaire innovant",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Menu Maker",
+    "date": "janvier 2025",
+    "picture": "imagesProjets/projet-qwenta.png",
+    "description": "Planifier le développement d'un site web",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "724EVENTS",
+    "date": " decembre 2024",
+    "picture": "imagesProjets/724event.png",
+    "description": "Débugger le site d'une agence d'événementiel",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "5 ",
+    "title": "Nina Carducci",
+    "date": "Novembre 2024",
+    "picture": "imagesProjets/Nina_Carducci.png",
+    "description": "Optimiser le référencement d'un site de photographe",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "6 ",
+    "title": "Booki",
+    "date": "Octobre 2024",
+    "picture": "imagesProjets/booki.png",
+    "description": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "7 ",
+    "title": "Ohmyfood",
+    "date": "Aout 2024",
+    "picture": "imagesProjets/oMyfood.png",
+    "description": "Améliorer l'interface d'un site mobile avec des animations CSS",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+
+  {
+    "id": "8 ",
+    "title": "KASA",
+    "date": "Juillet 2024",
+    "picture": "imagesProjets/kasa.png",
+    "description": "Créer une application web de location immobilière avec React",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "9 ",
+    "title": "Sophie Bluel",
+    "date": "Juin 2024",
+    "picture": "imagesProjets/Sophie-Buel.png",
+    "description": "Créer une page web dynamique avec JavaScript",
+    "langages": [
+      "React",
+      "Node.js",
+      "MongoDB"
+    ]
+  }
+
+]

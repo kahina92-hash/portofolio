@@ -1,0 +1,16 @@
+.container-projet {
+  padding-top: 3rem;
+  line-height: 0.5rem;
+}
+.container-projet h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+.container-projet h1 span {
+  color: rgba(124, 214, 101, 0.6);
+}
+.container-projet p {
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=projet.css.map */

@@ -1,0 +1,24 @@
+// Contexte global pour le fond étoilé
+.background-stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;  // Mettre derrière tout le contenu
+  overflow: hidden;
+  background: radial-gradient(circle, #0d1b2a, #1b263b, #415a77);
+}
+
+// Styles des étoiles
+.star {
+  position: absolute;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite alternate ease-in-out;
+}
+
+// Effet de scintillement
+@keyframes twinkle {
+  0% { opacity: 0.3; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.3); }
+}

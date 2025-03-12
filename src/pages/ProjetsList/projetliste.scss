@@ -1,0 +1,25 @@
+.container-projets {
+    padding: 20px;
+ // Fond sombre
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column; // Aligner le titre et la grille
+    align-items: center; // Centre horizontalement
+  
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+  
+    .list-projets {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // 3 colonnes
+      grid-template-rows: repeat(3, auto); // 3 lignes
+      gap: 20px; // Espacement entre les cartes
+      justify-content: center;
+      align-items: center;
+      width: fit-content; // Ajuste la largeur à la grille
+    }
+  }
+  
