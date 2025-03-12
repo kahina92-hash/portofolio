@@ -1,1 +1,22 @@
-.container-projets{padding:20px;color:#fff;text-align:center;display:flex;flex-direction:column;align-items:center}.container-projets h1{margin-bottom:20px;font-size:2rem}.container-projets .list-projets{display:grid;grid-template-columns:repeat(3, 1fr);grid-template-rows:repeat(3, auto);gap:20px;justify-content:center;align-items:center;width:-moz-fit-content;width:fit-content}
+.container-projets {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-projets h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.container-projets .list-projets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=projetliste.css.map */

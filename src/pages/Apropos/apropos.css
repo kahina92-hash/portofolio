@@ -1,1 +1,7 @@
-/*# sourceMappingURL=apropos.css.map */
+.container-apropos h1 {
+  color: white;
+  font-size: 1rem;
+}
+.container-apropos p {
+  color: #ccc; /* Si tu veux aussi styliser le paragraphe */
+}/*# sourceMappingURL=apropos.css.map */

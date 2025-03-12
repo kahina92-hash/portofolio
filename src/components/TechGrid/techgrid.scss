@@ -1,0 +1,62 @@
+// Variables de couleurs
+$bg-color: #0a192f;
+$border-color: #fbbf24; // Jaune doré
+$text-color: white;
+
+// Conteneur principal
+.tech-container {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  h2{
+    color: $text-color;
+  }
+}
+
+// Grille des icônes
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4 colonnes
+  gap: 24px;
+  padding: 32px;
+  color: $text-color;
+}
+
+// Carte contenant chaque icône
+.tech-card {
+  border: 2px solid $border-color;
+  padding: 5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  // Icônes
+  svg {
+    width: 60px;
+    height: 60px;
+    fill: $text-color;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover svg {
+    transform: scale(1.2);
+  }
+
+  // Texte des icônes
+  p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
