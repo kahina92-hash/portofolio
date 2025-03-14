@@ -10,7 +10,7 @@ import projetPortofolio from './projetPortofolio/projet-portofolio.png';
 import projetArgentBank from './projetArgentBank/projet-argent-bank.png';
 import qwenta from './qwanta/projet-qwenta.png';
 function Home() {
-  const text = 'Développeur web Frontend';
+  const text = 'Développeuse web Frontend';
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
 

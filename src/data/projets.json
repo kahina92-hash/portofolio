@@ -8,7 +8,10 @@
     "langages": [
       "React",
       "JavaScript",
-      "SCSS"
+      "Sass",
+      " Next",
+      "Bootstrap",
+      "Html/Css"
     ],
       "lien":"https://github.com/kahina92-hash/portofolio.git"
     
@@ -22,7 +25,10 @@
     "langages": [
       "React",
       "Node.js",
-      "MongoDB"
+      "MongoDB",
+      "Sass",
+      "Html/Css",
+      "Redux"
     ],
     "lien":"https://github.com/Kahina24D/ArgentBank-Frontend.git"
   },
@@ -33,9 +39,9 @@
     "picture": "imagesProjets/projet-qwenta.png",
     "description": "Planifier le développement d'un site web",
     "langages": [
-      "React",
-      "Node.js",
-      "MongoDB"
+      "Agile",
+      "Kanban",
+      "Notion"
     ],
     "lien":"git@github.com:kahina92-hash/Menu-Marker.git"
   },
@@ -46,9 +52,11 @@
     "picture": "imagesProjets/724event.png",
     "description": "Débugger le site d'une agence d'événementiel",
     "langages": [
-      "React",
-      "Node.js",
-      "MongoDB"
+      "Html/Css",
+      "JavaScript",
+      "Sass",
+      "React"
+
     ],
     "lien":"git@github.com:kahina92-hash/724EVENTS.git"
   },
@@ -59,9 +67,10 @@
     "picture": "imagesProjets/Nina_Carducci.png",
     "description": "Optimiser le référencement d'un site de photographe",
     "langages": [
-      "React",
-      "Node.js",
-      "MongoDB"
+      "Html/Css",
+      "JavaScript",
+      "SEO",
+      "Accessibilite"
     ],
     "lien":"git@github.com:kahina92-hash/Nina-Carducci.git"
   },
@@ -73,9 +82,9 @@
     "picture": "imagesProjets/booki.png",
     "description": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
     "langages": [
-      "React",
-      "Node.js",
-      "MongoDB"
+      "Html/Css",
+      "Figma"
+      
     ],
     "lien":"git@github.com:kahina92-hash/Booki.git"
   },
@@ -86,9 +95,9 @@
     "picture": "imagesProjets/oMyfood.png",
     "description": "Améliorer l'interface d'un site mobile avec des animations CSS",
     "langages": [
-      "React",
-      "Node.js",
-      "MongoDB"
+      "Html/Css",
+      "Sass",
+      "Figma"
     ],
      "lien":"https://github.com/kahina92-hash/ohMyfood.git"
   },
@@ -101,8 +110,8 @@
     "description": "Créer une application web de location immobilière avec React",
     "langages": [
       "React",
-      "Node.js",
-      "MongoDB"
+      "JavaScript",
+      "Html/Css"
     ],
     "lien":"https://github.com/kahina92-hash/kasa.git"
   },
@@ -114,8 +123,8 @@
     "description": "Créer une page web dynamique avec JavaScript",
     "langages": [
       "React",
-      "Node.js",
-      "MongoDB"
+      "JavaScript",
+      "Html/Css"
     ],
      "lien":"https://github.com/kahina92-hash/sophie_buel.git"
   }

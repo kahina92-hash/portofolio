@@ -1,3 +1,7 @@
+$primary-rgb: 0 21 79; 
+$primary-color: rgb($primary-rgb);
+
+
 .cadre-projet {
  
   color: #ffffff; // Texte blanc
@@ -45,10 +49,11 @@
     flex-wrap: wrap;
   }
   li {
-    background-color: #ffffff22;
+    background-color:white;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
+    color: rgb($primary-rgb);
   }
 
   .btn-info {
@@ -70,13 +75,15 @@
   align-self: center;
   justify-self: center;
 
-padding: 1rem;
+padding: 0.5rem;
   width: 100px;
   text-decoration: none;
+  border-radius: 10px;
  span{
 
 display: block;
 margin: auto;
+color: $primary-color;
  }
 
   }
