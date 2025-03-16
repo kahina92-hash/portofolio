@@ -19,7 +19,7 @@ const Apropos = () => {
           technologie web. À part coder, j'aime aussi :<br/> ✨ Apprendre de
           nouvelles compétences encore et encore... 🤷‍♀️,<br/> ✈️ Voyager <br/> 📚 Lire
         </p>
-        <img src="./imagesProjets/qui-suis-je-removebg-preview.png" alt="image-apropos"/>
+        <img src="../imagesProjets/qui-suis-je-removebg-preview.png" alt="image-apropos"/>
 
       </div>
       
