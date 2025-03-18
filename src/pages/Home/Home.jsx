@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import './home.scss';
 import '../../components/Cadre/cadre.scss';
 import imagescceuil from './imagescceuil/Logo.png'; // Utilisation correcte de l'importation
-
+import { useNavigate } from 'react-router-dom'; 
 import imagepresentation from './imagepresentation/image_presentation.png';
 import projetPortofolio from './projetPortofolio/projet-portofolio.png';
 import projetArgentBank from './projetArgentBank/projet-argent-bank.png';
@@ -27,6 +27,10 @@ function Home() {
       }, 2000);
     }
   }, [index]);
+  const navigate=useNavigate()
+  const handlClick=()=>{
+    navigate('/projets')
+  }
   return (
     <div className="container-aceeuil">
       <div className="page-wrapper">
@@ -80,9 +84,7 @@ function Home() {
               À Propos <span></span>{' '}
             </h2>
             <p>
-              Je me suis plongé dans le monde fascinant de la programmation,
-              <br />
-              et je peux dire que j'ai déjà acquis une solide base, du moins je
+              Je me suis plongé dans le monde fascinant de la programmation,et je peux dire que j'ai déjà acquis une solide base, du moins je
               l'espère… 🤷‍♂️
             </p>
           </div>
@@ -113,7 +115,10 @@ function Home() {
           </div>
 
           <div className="trouver-projet">
-            <button className="btn-trouver-projet">
+            <button className="btn-trouver-projet"
+            onClick= {handlClick}
+            
+            >
               Plus de projets <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>

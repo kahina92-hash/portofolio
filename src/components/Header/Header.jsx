@@ -11,7 +11,7 @@ function Header() {
     
 
       <nav>
-      <div class="nav-icon">K</div>
+      <div className="nav-icon">K</div>
         <ul className="nav-link">
           <li className="active-link-acceuil">
             <NavLink to="/home" className={({isActive})=>isActive ? "active-link hello  " : "" } >Hello !</NavLink>

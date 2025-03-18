@@ -1,5 +1,5 @@
 import React from 'react';
- import './cadre.scss'
+import './cadre.scss';
 
 function Cadre({ projet }) {
   if (!projet) {
@@ -8,35 +8,52 @@ function Cadre({ projet }) {
 
   return (
     <div className="cadre-projet">
-   
-
       {/* Affichage de l'image */}
-      {projet.picture && projet.picture.length > 0 && (
-        <img src={projet.picture} alt={projet.title} className="projet-image" />
-      )}
+      {projet.picture && (
+  <img src={process.env.PUBLIC_URL + projet.picture} alt={projet.title} className='projet-image' />
+)}
 
-      {/* Affichage des langages utilisés */}
-      <div className="infots-projet" > 
+
+      {/* Affichage des informations */}
+      <div className="infots-projet">
         <h2>{projet.title}</h2>
-      <p>{projet.date}</p>
-      <p>{projet.description}</p>
-      <ul>
-        {projet.langages.map((tech, index) => (
-          <li key={index}>{tech}</li>
-        ))}
-      </ul>
-      {projet.lien && (
-    <a 
-      href={projet.lien} 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="btn-github"
-    >
-      <span>GitHub</span>
-    </a>
-  )}
-      </div>
+        <p>{projet.date}</p>
+        <p>{projet.description}</p>
+
+        <ul>
+          {projet.langages.map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul>
+<div className='git-demo'>
+<div className='github'>
+{projet.lien && (
+          <a 
+            href={projet.lien} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-github"
+          >
+            <span>GitHub</span>
+          </a>
+        )}
+</div>
+<div className='demo'>
+{projet.lien && (
+          <a 
+            href={projet.lien} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-github"
+          >
+            <span>Demo</span>
+          </a>
+        )}
+</div>
+</div>
      
+
+      </div>
     </div>
   );
 }

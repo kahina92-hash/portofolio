@@ -1,6 +1,7 @@
 import React from 'react';
 import TechGrid from '../../components/TechGrid/TechGrid';
 import './apropos.scss';
+import photoappropos from './photoappropos/qui-suis-je-removebg-preview.png'
 const Apropos = () => {
   return (
     <div className="container-apropos">
@@ -19,7 +20,8 @@ const Apropos = () => {
           technologie web. À part coder, j'aime aussi :<br/> ✨ Apprendre de
           nouvelles compétences encore et encore... 🤷‍♀️,<br/> ✈️ Voyager <br/> 📚 Lire
         </p>
-        <img src="../imagesProjets/qui-suis-je-removebg-preview.png" alt="image-apropos"/>
+        <img src={photoappropos} alt="image-apropos"/>
+      
 
       </div>
       

@@ -18,7 +18,7 @@ function ProjetsList({ projet }) {
 
       <div className="list-projets">
         {projets.map((projet) => (
-          <Cadre projet={projet}></Cadre>
+        <Cadre key={projet.id} projet={projet} />
         ))}
       </div>
     </div>

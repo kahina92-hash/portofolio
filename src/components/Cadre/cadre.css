@@ -80,4 +80,8 @@
   margin: 10px 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.cadre-projet .git-demo {
+  display: flex;
+  gap: 3rem;
 }/*# sourceMappingURL=cadre.css.map */
