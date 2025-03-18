@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.3a031265.css",
+    "main.js": "/portofolio/static/js/main.e306c2b3.js",
+    "static/js/453.1b6cbde4.chunk.js": "/portofolio/static/js/453.1b6cbde4.chunk.js",
+    "static/media/projet-qwenta.png": "/portofolio/static/media/projet-qwenta.144afd5f701d3b7d4e2a.png",
+    "static/media/image_presentation.png": "/portofolio/static/media/image_presentation.a75e81a80415b33a0b8f.png",
+    "static/media/projet-portofolio.png": "/portofolio/static/media/projet-portofolio.c77fc7d4566fcb6601ce.png",
+    "static/media/projet-argent-bank.png": "/portofolio/static/media/projet-argent-bank.0b06539a44d1af5673fd.png",
+    "static/media/qui-suis-je-removebg-preview.png": "/portofolio/static/media/qui-suis-je-removebg-preview.785407fe8bac293ab069.png",
+    "static/media/Logo.png": "/portofolio/static/media/Logo.e544f47b49d538c7041b.png",
+    "index.html": "/portofolio/index.html",
+    "main.3a031265.css.map": "/portofolio/static/css/main.3a031265.css.map",
+    "main.e306c2b3.js.map": "/portofolio/static/js/main.e306c2b3.js.map",
+    "453.1b6cbde4.chunk.js.map": "/portofolio/static/js/453.1b6cbde4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a031265.css",
+    "static/js/main.e306c2b3.js"
+  ]
+}
