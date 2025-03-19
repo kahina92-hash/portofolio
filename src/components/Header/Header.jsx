@@ -14,17 +14,17 @@ function Header() {
       <div className="nav-icon">K</div>
         <ul className="nav-link">
           <li className="active-link-acceuil">
-            <NavLink to="/home" className={({isActive})=>isActive ? "active-link hello  " : "" } >Hello !</NavLink>
+            <NavLink to="/" end className={({isActive})=>isActive ? "active-link   " : "inactive-link" } >Hello !</NavLink>
           </li>
           
-          <NavLink to="projets" className={({ isActive }) => isActive ? "active-link" : ""}>Projets</NavLink>
+          <NavLink to="projets" className={({ isActive }) => isActive ? "active-link" : "inactive-link"}>Projets</NavLink>
           <li className="active-link-appropos">
-            <NavLink to="/apropos" className={({ isActive }) => isActive ? "active-link" : ""}>
+            <NavLink to="/apropos" className={({ isActive }) => isActive ? "active-link" : "inactive-link"}>
               <FontAwesomeIcon icon={faUser} className="fauser" />    À Propos
             </NavLink>
            
           </li> 
-          <NavLink to="contact" className={({ isActive }) => isActive ? "active-link" : ""}>Contact</NavLink>
+          <NavLink to="contact" className={({ isActive }) => isActive ? "active-link" : "inactive-link"}>Contact</NavLink>
           
         </ul>
       </nav>

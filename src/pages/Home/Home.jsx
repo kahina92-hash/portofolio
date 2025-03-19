@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import './home.scss';
 import '../../components/Cadre/cadre.scss';
 import imagescceuil from './imagescceuil/Logo.png'; // Utilisation correcte de l'importation
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import imagepresentation from './imagepresentation/image_presentation.png';
 import projetPortofolio from './projetPortofolio/projet-portofolio.png';
 import projetArgentBank from './projetArgentBank/projet-argent-bank.png';
@@ -27,10 +27,13 @@ function Home() {
       }, 2000);
     }
   }, [index]);
-  const navigate=useNavigate()
-  const handlClick=()=>{
-    navigate('/projets')
-  }
+  const navigate = useNavigate();
+  const handlClick = () => {
+    navigate('/projets');
+  };
+  const handlClick1 = () => {
+    navigate('/contact');
+  };
   return (
     <div className="container-aceeuil">
       <div className="page-wrapper">
@@ -45,14 +48,14 @@ function Home() {
               <span className="name">Kahina SAIDI</span>
               <br />
               <motion.div
-              initial={{ x: '0%' }} // Texte commence hors de l'écran à droite
-              animate={{ x: 100 }} // Le texte se déplace jusqu'à sa position finale
-              transition={{ duration: 3 }} // Durée de l'animation
-              style={{
-                fontSize: '2rem',
-                fontWeight: 'bold',
-                color: 'orange',
-              }}
+                initial={{ x: '0%' }} // Texte commence hors de l'écran à droite
+                animate={{ x: 100 }} // Le texte se déplace jusqu'à sa position finale
+                transition={{ duration: 3 }} // Durée de l'animation
+                style={{
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold',
+                  color: 'orange',
+                }}
               >
                 {displayedText}
               </motion.div>
@@ -62,7 +65,9 @@ function Home() {
           <img src={imagepresentation} alt="imagepresentation"></img>
         </div>
         <div className="btn-contact">
-          <button className="btn1">Contacter-moi</button>
+          <button className="btn1" onClick={handlClick1}>
+            Contacter-moi
+          </button>
           <button className="btn2">Mon-CV</button>
         </div>
 
@@ -84,7 +89,8 @@ function Home() {
               À Propos <span></span>{' '}
             </h2>
             <p>
-              Je me suis plongé dans le monde fascinant de la programmation,et je peux dire que j'ai déjà acquis une solide base, du moins je
+              Je me suis plongé dans le monde fascinant de la programmation,et
+              je peux dire que j'ai déjà acquis une solide base, du moins je
               l'espère… 🤷‍♂️
             </p>
           </div>
@@ -115,10 +121,7 @@ function Home() {
           </div>
 
           <div className="trouver-projet">
-            <button className="btn-trouver-projet"
-            onClick= {handlClick}
-            
-            >
+            <button className="btn-trouver-projet" onClick={handlClick}>
               Plus de projets <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
