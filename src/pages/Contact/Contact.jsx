@@ -3,7 +3,13 @@ import { useForm } from "react-hook-form";
 import "./contact.scss";
 
 const Contact = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }, // Récupération des erreurs
+  } = useForm();
+  
   const [messageSent, setMessageSent] = useState(false);
 
   const onSubmit = (data) => {
@@ -19,21 +25,71 @@ const Contact = () => {
         <h2>Me contacter</h2>
         <p>Vous voulez en savoir plus sur moi ? Contactez-moi !</p>
         <p>📧 kahinasaidi771@gmail.com</p>
-        <p>📍 57000,Metz</p>
+        <p>📍 57000, Metz</p>
       </div>
 
       <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
-        <input type="email" placeholder="Votre adresse mail" {...register("email")} />
+        {/* Champ Email */}
+        <input
+          type="email"
+          placeholder="Votre adresse mail"
+          {...register("email", {
+            required: "L'email est obligatoire",
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+              message: "L'email n'est pas valide"
+            }
+          })}
+        />
+        {errors.email && <p className="error-message">{errors.email.message}</p>}
+
+        {/* Prénom & Nom */}
         <div className="input-group">
-          <input type="text" placeholder="Votre prénom" {...register("prenom")} />
-          <input type="text" placeholder="Votre nom" {...register("nom")} />
+          <input
+            type="text"
+            placeholder="Votre prénom"
+            {...register("prenom", { required: "Le prénom est obligatoire" })}
+          />
+          {errors.prenom && <p className="error-message">{errors.prenom.message}</p>}
+
+          <input
+            type="text"
+            placeholder="Votre nom"
+            {...register("nom", { required: "Le nom est obligatoire" })}
+          />
+          {errors.nom && <p className="error-message">{errors.nom.message}</p>}
         </div>
+
+        {/* Téléphone & Entreprise */}
         <div className="input-group">
-          <input type="tel" placeholder="Votre téléphone" {...register("telephone")} />
-          <input type="text" placeholder="Votre entreprise" {...register("entreprise")} />
+          <input
+            type="tel"
+            placeholder="Votre téléphone"
+            {...register("telephone", {
+              required: "Le téléphone est obligatoire",
+              pattern: {
+                value: /^[0-9]+$/,
+                message: "Le numéro de téléphone doit contenir uniquement des chiffres"
+              }
+            })}
+          />
+          {errors.telephone && <p className="error-message">{errors.telephone.message}</p>}
+
+          <input
+            type="text"
+            placeholder="Votre entreprise"
+            {...register("entreprise")}
+          />
         </div>
-        <textarea placeholder="Votre message" {...register("message")} rows="4" />
-        
+
+        {/* Message */}
+        <textarea
+          placeholder="Votre message"
+          {...register("message", { required: "Le message est obligatoire" })}
+          rows="4"
+        />
+        {errors.message && <p className="error-message">{errors.message.message}</p>}
+
         <button type="submit">Envoyer</button>
         {messageSent && <p className="success-message">Votre message a été envoyé avec succès !</p>}
       </form>
