@@ -60,3 +60,16 @@ $text-color: white;
     font-weight: bold;
   }
 }
+@media (max-width: 768px) {
+
+  .tech-container{
+   
+    .tech-grid{
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+.tech-card{
+  padding: 2rem;
+}
+    }
+  }
+  }

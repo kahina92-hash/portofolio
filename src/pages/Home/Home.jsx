@@ -1,18 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import './home.scss';
-import '../../components/Cadre/cadre.scss';
-import imagescceuil from './imagescceuil/Logo.png'; // Utilisation correcte de l'importation
-import { useNavigate } from 'react-router-dom';
-import imagepresentation from './imagepresentation/image_presentation.png';
-import projetPortofolio from './projetPortofolio/projet-portofolio.png';
-import projetArgentBank from './projetArgentBank/projet-argent-bank.png';
-import qwenta from './qwanta/projet-qwenta.png';
-function Home() {
-  const text = 'Développeuse web Frontend';
-  const [displayedText, setDisplayedText] = useState('');
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import "./home.scss";
+ import imagescceuil from "./imagescceuil/Logo.png";
+import imagepresentation from "./imagepresentation/image_presentation.png";
+import projetPortofolio from "./projetPortofolio/projet-portofolio.png";
+import projetArgentBank from "./projetArgentBank/projet-argent-bank.png";
+import qwenta from "./qwanta/projet-qwenta.png";
+
+function Home({ isMenuOpen }) {
+  const text = "Développeuse web Frontend";
+  const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (index < text.length) {
@@ -23,51 +23,38 @@ function Home() {
     } else {
       setTimeout(() => {
         setIndex(0);
-        setDisplayedText('');
+        setDisplayedText("");
       }, 2000);
     }
   }, [index]);
-  const navigate = useNavigate();
-  const handlClick = () => {
-    navigate('/projets');
-  };
-  const handlClick1 = () => {
-    navigate('/contact');
-  };
+
   return (
-    <div className="container-aceeuil">
+    <div className={`container-aceeuil ${isMenuOpen ? "menu-open" : ""}`}>
       <div className="page-wrapper">
         <div className="content">
           <h1>
-            <br />
-
             <span className="hello">
-              Salut !<span className="hand">👋🏻</span>
+              Salut ! <span className="hand">👋🏻</span>
               <br />
-              <span className="me">je suis</span>{' '}
-              <span className="name">Kahina SAIDI</span>
+              <span className="me">Je suis</span> <span className="name">Kahina SAIDI</span>
               <br />
-              <motion.div
-                initial={{ x: '0%' }} // Texte commence hors de l'écran à droite
-                animate={{ x: 100 }} // Le texte se déplace jusqu'à sa position finale
-                transition={{ duration: 3 }} // Durée de l'animation
-                style={{
-                  fontSize: '1.5rem',
-                  fontWeight: 'bold',
-                  color: 'orange',
-                }}
-              >
-                {displayedText}
-              </motion.div>
+              <div className="text-container">
+                <motion.div
+                  initial={{ x: "-100%" }}
+                  animate={{ x: "0%" }}
+                  transition={{ duration: 1.5 }}
+                  className="animated-text"
+                >
+                  {displayedText}
+                </motion.div>
+              </div>
             </span>
-            <br />
           </h1>
-          <img src={imagepresentation} alt="imagepresentation"></img>
+          <img src={imagepresentation} alt="imagepresentation" />
         </div>
+
         <div className="btn-contact">
-          <button className="btn1" onClick={handlClick1}>
-            Contacter-moi
-          </button>
+          <button className="btn1" onClick={() => navigate("/contact")}>Contacter-moi</button>
           <button className="btn2">Mon-CV</button>
         </div>
 
@@ -76,7 +63,7 @@ function Home() {
           <button className="btn2"></button>
           <button className="btn3"></button>
         </div>
-        <div className="resentation">
+        <div className="presentation">
           <div>
             <img
               className="logo"
@@ -95,10 +82,11 @@ function Home() {
             </p>
           </div>
         </div>
+
+
+
         <div className="mes-projet">
-          <h2>
-            Mes derniers<span> Projets</span>{' '}
-          </h2>
+          <h2>Mes derniers <span>Projets</span></h2>
           <div className="projet-img">
             <div className="image-container">
               <img src={projetPortofolio} alt="Portfolio" />
@@ -119,9 +107,8 @@ function Home() {
               </div>
             </div>
           </div>
-
           <div className="trouver-projet">
-            <button className="btn-trouver-projet" onClick={handlClick}>
+            <button className="btn-trouver-projet" onClick={() => navigate("/projets")}>
               Plus de projets <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
@@ -130,4 +117,5 @@ function Home() {
     </div>
   );
 }
+
 export default Home;

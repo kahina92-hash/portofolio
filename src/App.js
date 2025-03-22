@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Apropos from "./pages/Apropos/Apropos";
@@ -11,15 +12,17 @@ import "./App.scss";
 import StarsBackground from "./components/StarsBackground/StarsBackground";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div>
       <StarsBackground />
       <div className="main-container">
-        <Header />
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home isMenuOpen={isMenuOpen} />} />
+            <Route path="/home" element={<Home isMenuOpen={isMenuOpen} />} />
             <Route path="/apropos" element={<Apropos />} />
             <Route path="/projets" element={<ProjetsList />} />
             <Route path="/contact" element={<Contact />} />

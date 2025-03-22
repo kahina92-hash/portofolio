@@ -1,31 +1,37 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./header.scss";
-import React from 'react';
 
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-
-function Header() {
+function Header({ isMenuOpen, setIsMenuOpen }) {
   return (
     <header>
-    
-
       <nav>
-      <div className="nav-icon">K</div>
-        <ul className="nav-link">
-          <li className="active-link-acceuil">
-            <NavLink to="/" end className={({isActive})=>isActive ? "active-link   " : "inactive-link" } >Hello !</NavLink>
+        <div className="icon-menu"><div className="nav-icon">K</div>
+        
+        {/* Icône du menu burger */}
+        <button className="burger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+        </button>
+</div>
+        
+        {/* Liens de navigation */}
+        <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+          <li>
+            <NavLink to="/" end>Accueil</NavLink>
           </li>
-          
-          <NavLink to="projets" className={({ isActive }) => isActive ? "active-link" : "inactive-link"}>Projets</NavLink>
-          <li className="active-link-appropos">
-            <NavLink to="/apropos" className={({ isActive }) => isActive ? "active-link" : "inactive-link"}>
-              <FontAwesomeIcon icon={faUser} className="fauser" />    À Propos
+          <li>
+            <NavLink to="/projets">Projets</NavLink>
+          </li>
+          <li>
+            <NavLink to="/apropos">
+              <FontAwesomeIcon icon={faUser} className="fauser" /> À Propos
             </NavLink>
-           
-          </li> 
-          <NavLink to="contact" className={({ isActive }) => isActive ? "active-link" : "inactive-link"}>Contact</NavLink>
-          
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
         </ul>
       </nav>
     </header>

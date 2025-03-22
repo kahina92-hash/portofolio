@@ -6,16 +6,16 @@ margin: 0;
 .page-wrapper{
   display: flex;
   flex-direction: column;
-margin: 0;
-padding: 9;
+  margin: 0;
+  // padding: 9;
   .content {
   display: flex;
  justify-content:space-between;
   gap: 0.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
   color: white;
-text-align: center;
+  text-align: center;
 p {
   color: white;
 
@@ -69,7 +69,7 @@ gap: 1rem;
  font-weight: 600;
 }
 }
-.resentation{
+.presentation{
   display: flex;
 
 margin-top: -6rem;
@@ -130,7 +130,7 @@ gap: 0.5rem;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  // padding: 1rem;
 
   h2 {
     color: white;
@@ -208,33 +208,27 @@ gap: 0.5rem;
     }
   
 }
-.trouver-projet{
+.trouver-projet {
   display: flex;
-align-items: end;
-justify-content: end;
-margin-right: 26rem;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
   width: 100%; /* Prend toute la largeur */
-  margin-top: 2rem; 
-
-
-  .btn-trouver-projet{
+  margin-top: 2rem;
+  
+  .btn-trouver-projet {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background-color:rgba(124, 214, 101, 0.6); 
-    color:white;
+    background-color: rgba(124, 214, 101, 0.6);
+    color: white;
     padding: 1rem 1.5rem;
     border-radius: 10px;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    .fa-solid {
-      display: inline-block;
-      font-size: 1rem; /* Ajuste la taille */
-    }
+    position: relative;
   }
-  
 }
 }
 
@@ -269,262 +263,91 @@ margin-right: 26rem;
 }
 
 @media (max-width: 768px) {
-  .container-aceeuil {
-    padding: 0;
-    margin: 0;
-
-    .page-wrapper {
+  .page-wrapper{
+ 
+    .content{
       display: flex;
       flex-direction: column;
-      margin: 0;
-      padding: 9;
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+      .hello {
+        font-size: 1.5rem;
         color: white;
-        text-align: center;
-        p {
-          color: white;
-
-          .text-innovant {
-            font-size: 1.5rem;
-          }
-
-          .presentation-descreption {
-            color: red;
-            white-space: nowrap;
-            animation: slideAndFade 5s linear infinite;
-          }
-        }
-
-        h1 {
-          display: flex;
-          flex-direction: column;
-          text-align: justify;
-        }
-
-        .hello {
-          color: white;
-          line-height: 3rem;
-          font-size: 1.5rem;
-        }
-
-        .hand {
-          display: inline-block;
-          animation: wave 1s infinite alternate ease-in-out;
-          transform-origin: bottom right;
-        }
-
-        .name {
-          color: rgba(124, 214, 101, 0.6);
-          font-size: 2rem;
-        }
-
-        img {
-          width: 100%;
-          max-width: 350px; /* Limite la largeur */
-          object-fit: contain;
-          position: static; /* Retirer le positionnement relatif ou fixe */
-          margin-top: 0; /* Supprime l'écart en haut */
-        }
-      }
-
-      .btn-contact {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        gap: 1rem;
-
-        .btn1, .btn2 {
-          width: 150px;
-          padding: 0.8rem;
-          border-radius: 15px;
+    
+        position: relative; // Permet de positionner le texte animé en absolu
+        min-height: 90px; // Fixe une hauteur pour éviter le déplacement
+      
+        .text-container {
           position: relative;
-          background-color: rgba(124, 214, 101, 0.6);
-          color: white;
-          font-weight: 600;
+     
+          width: 100%;
+          height: 90px; // Hauteur fixe pour éviter que les éléments bougent
+          overflow: hidden;
         }
-      }
-
-      .presentation {
-        display: flex;
-        margin-top: -6rem;
-
-        h2,
-        p {
-          color: white;
-        }
-
-        .presentation-texte {
-          display: flex;
-          flex-direction: column;
-          align-self: center;
-          width: 520px;
-
-          h2 {
-            font-size: 2rem;
-          }
-
-          p {
-            font-size: 1.5rem;
-          }
-        }
-      }
-
-      .button-container {
-        display: flex;
-        gap: 1rem;
-        padding-top: 2rem;
-
-        .btn1,
-        .btn2,
-        .btn3 {
-          width: 110%;
-          border-radius: 10px;
-          border: none;
-          padding: 0.1rem;
-        }
-
-        .btn2 {
-          background-color: rgba(124, 214, 101, 0.6);
-        }
-      }
-
-      .content h1 {
-        font-size: 3rem;
-        color: white;
-        line-height: 1.2;
-        position: relative;
-        opacity: 1;
-        animation: fadeInScale 2s ease-out forwards;
-      }
-
-      .button-contact {
-        display: flex;
-        gap: 0.5rem;
-
-        .btn1,
-        .btn2 {
-          width: 150px;
-          padding: 0.1rem;
-          border-radius: 15px;
-        }
-      }
-
-      .mes-projet {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-
-        h2 {
-          color: white;
-          font-size: 2rem;
-
-          span {
-            color: rgba(124, 214, 101, 0.6);
-          }
-        }
-
-        .projet-img {
-          display: flex;
-          gap: 1.5rem;
-
-          .image-container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            overflow: hidden;
-            border-radius: 10px;
-            cursor: pointer;
-
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: opacity 0.3s ease-in-out;
-            }
-
-            .overlay {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(124, 214, 101, 0.6);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              opacity: 0;
-              transition: opacity 0.3s ease-in-out;
-              z-index: 1;
-            }
-
-            .image-title {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              color: white;
-              font-size: 1.8rem;
-              font-weight: bold;
-              text-align: center;
-              opacity: 0;
-              z-index: 2;
-              transition: opacity 0.3s ease-in-out;
-            }
-
-            &:hover {
-              img {
-                opacity: 0.6;
-                transform: scale(1.05);
-              }
-
-              .overlay {
-                opacity: 1;
-              }
-
-              .image-title {
-                opacity: 1;
-              }
-            }
-          }
-        }
-      }
-
-      .trouver-projet {
-        display: flex;
-        align-items: end;
-        justify-content: end;
-        margin-right: 26rem;
-        width: 100%;
-        margin-top: 2rem;
-
-        .btn-trouver-projet {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.5rem;
-          background-color: rgba(124, 214, 101, 0.6);
-          color: white;
-          padding: 1rem 1.5rem;
-          border-radius: 10px;
+      
+        .animated-text {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          font-size: 1.5rem;
           font-weight: bold;
-          border: none;
-          cursor: pointer;
+          color: orange;
+          white-space: nowrap;
+        }
+      }
+      
+    }
+    .presentation{
+      display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
 
-          .fa-solid {
-            display: inline-block;
-            font-size: 1rem;
-          }
+      h2,p{ color: white;}
+      .presentation-texte{
+        display: flex;
+        text-align: justify;
+        max-width: 100%;
+    
+        padding: 1rem ;
+    
+        margin-top: 9rem;
+        h2{
+          font-size: 2rem;
+       
+        }
+        p{
+        font-size: 1rem;
+        }
+      }
+    .logo{
+      width: 100%;
+    }
+    }
+  .mes-projet{
+    .projet-img{
+      display: flex;
+      flex-direction: column;
+  
+      .image-container{
+
+        img{
+      
         }
       }
     }
+    .trouver-projet {
+      display: flex;
+      justify-content: center; /* Centre le bouton */
+      align-items: center;
+      margin: 1rem 0;
+      
+      .btn-trouver-projet {
+        width: auto;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+      }
+    }
+  
+
   }
+}
 }

@@ -17,7 +17,7 @@ const Apropos = () => {
           professionnelle en tant que développeuse web frontend. Je suis
           passionnée par l'idée de continuer à développer mes compétences et de
           contribuer à des projets innovants qui repoussent les limites de la
-          technologie web. À part coder, j'aime aussi :<br/> ✨ Apprendre de
+          technologie web.<br/> À part coder, j'aime aussi :<br/> ✨ Apprendre de
           nouvelles compétences encore et encore... 🤷‍♀️,<br/> ✈️ Voyager <br/> 📚 Lire
         </p>
         <img src={photoappropos} alt="image-apropos"/>

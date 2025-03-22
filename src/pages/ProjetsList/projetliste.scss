@@ -36,3 +36,37 @@ $primary-color: rgb($primary-rgb);
     }
   }
   
+
+  @media (max-width: 1268px) {
+    .container-projets {
+      ul{
+       display: grid;
+       grid-template-columns: repeat(5, 1fr);
+             grid-template-rows: repeat(3, auto);
+      }
+      .list-projets{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+      }
+    }
+
+
+
+  }
+
+  @media (max-width: 768px) {
+    .container-projets {
+      ul{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr)
+      }
+      .list-projets{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+
+
+  }
