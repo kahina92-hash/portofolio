@@ -33,6 +33,10 @@ $primary-color: rgb($primary-rgb);
       justify-content: center;
       align-items: center;
       width: fit-content; // Ajuste la largeur à la grille
+      .carousel{
+        width: 200px;
+        height: 400px;
+      }
     }
   }
   
@@ -57,9 +61,13 @@ $primary-color: rgb($primary-rgb);
 
   @media (max-width: 768px) {
     .container-projets {
+      margin: auto;
       ul{
        display: grid;
-       grid-template-columns: repeat(3, 1fr)
+       grid-template-columns: repeat(3, 1fr);
+       width: 100%;
+       box-sizing: border-box;
+     
       }
       .list-projets{
         display: flex;

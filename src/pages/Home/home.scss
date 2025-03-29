@@ -7,20 +7,21 @@ margin: 0;
   display: flex;
   flex-direction: column;
   margin: 0;
-  // padding: 9;
+ 
   .content {
   display: flex;
- justify-content:space-between;
+ justify-content:space-evenly;
   gap: 0.5rem;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+
   color: white;
   text-align: center;
+  width: 100%;
 p {
   color: white;
 
 .text-innovant{
 font-size: 1.5rem;
+
 }
   
 .presentation-descreption{color: red;
@@ -37,6 +38,9 @@ text-align: justify;}
     color: white; 
     line-height: 3rem;
     font-size: 1.5rem;
+    .animated-text{
+      color: orange;
+    } 
   }
   .hand{
     display: inline-block;
@@ -46,10 +50,13 @@ text-align: justify;}
   .name{color:rgba(124, 214, 101, 0.6);
   font-size: 2rem; }
 img{
-  width: 350px;
+ max-width: 350px;
   object-fit: contain;
   position:relative;
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+ 
 }
 
 }
@@ -80,6 +87,7 @@ margin-top: -6rem;
     align-self: center;
     max-width: 520px;
     width: 100%;
+  
 
     h2{
       font-size: 2rem;

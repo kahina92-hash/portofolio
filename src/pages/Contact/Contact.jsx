@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import "./contact.scss";
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import './contact.scss';
 
 const Contact = () => {
   const {
@@ -9,7 +9,7 @@ const Contact = () => {
     reset,
     formState: { errors }, // Récupération des erreurs
   } = useForm();
-  
+
   const [messageSent, setMessageSent] = useState(false);
 
   const onSubmit = (data) => {
@@ -33,65 +33,89 @@ const Contact = () => {
         <input
           type="email"
           placeholder="Votre adresse mail"
-          {...register("email", {
+          {...register('email', {
             required: "L'email est obligatoire",
             pattern: {
               value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-              message: "L'email n'est pas valide"
-            }
+              message: "L'email n'est pas valide",
+            },
           })}
         />
-        {errors.email && <p className="error-message">{errors.email.message}</p>}
+        {errors.email && (
+          <p className="error-message">{errors.email.message}</p>
+        )}
 
         {/* Prénom & Nom */}
         <div className="input-group">
-          <input
-            type="text"
-            placeholder="Votre prénom"
-            {...register("prenom", { required: "Le prénom est obligatoire" })}
-          />
-          {errors.prenom && <p className="error-message">{errors.prenom.message}</p>}
-
-          <input
-            type="text"
-            placeholder="Votre nom"
-            {...register("nom", { required: "Le nom est obligatoire" })}
-          />
-          {errors.nom && <p className="error-message">{errors.nom.message}</p>}
+          <div className="groupe-container">
+            <input
+              type="text"
+              placeholder="Votre prénom"
+              {...register('prenom', { required: 'Le prénom est obligatoire' })}
+            />
+            {errors.prenom && (
+              <p className="error-message">{errors.prenom.message}</p>
+            )}
+          </div>
+          <div className="groupe-container">
+            <input
+              type="text"
+              placeholder="Votre nom"
+              {...register('nom', { required: 'Le nom est obligatoire' })}
+            />
+            {errors.nom && (
+              <p className="error-message">{errors.nom.message}</p>
+            )}
+          </div>
         </div>
 
         {/* Téléphone & Entreprise */}
         <div className="input-group">
+        <div className="groupe-container">
           <input
             type="tel"
             placeholder="Votre téléphone"
-            {...register("telephone", {
-              required: "Le téléphone est obligatoire",
+            {...register('telephone', {
+              required: 'Le téléphone est obligatoire',
               pattern: {
                 value: /^[0-9]+$/,
-                message: "Le numéro de téléphone doit contenir uniquement des chiffres"
-              }
+                message:
+                  'Le numéro de téléphone doit contenir uniquement des chiffres',
+              },
             })}
           />
-          {errors.telephone && <p className="error-message">{errors.telephone.message}</p>}
+        
+         
+          {errors.telephone && (
+            <p className="error-message">{errors.telephone.message}</p>
+          )}
+ </div>
 
+ <div className="groupe-container">
           <input
             type="text"
             placeholder="Votre entreprise"
-            {...register("entreprise")}
+            {...register('entreprise')}
           />
+           </div>
         </div>
 
         {/* Message */}
         <textarea
           placeholder="Votre message"
-          {...register("message", { required: "Le message est obligatoire" })}
+          {...register('message', { required: 'Le message est obligatoire' })}
           rows="4"
         />
-        {errors.message && <p className="error-message">{errors.message.message}</p>}
+        {errors.message && (
+          <p className="error-message">{errors.message.message}</p>
+        )}
 
         <button type="submit">Envoyer</button>
-        {messageSent && <p className="success-message">Votre message a été envoyé avec succès !</p>}
+        {messageSent && (
+          <p className="success-message">
+            Votre message a été envoyé avec succès !
+          </p>
+        )}
       </form>
     </div>
   );

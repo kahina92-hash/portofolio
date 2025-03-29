@@ -6,7 +6,8 @@ $bg-color: #0a192f;
 .container-apropos {
   
   color: $text-color;
- padding: 6rem;
+width: 100%;
+box-sizing: border-box;
 
   h1 {
     font-size: 2.5rem;
@@ -53,7 +54,9 @@ $bg-color: #0a192f;
   }
 
   img {
-  width: 300px;
+
+ max-width: 100%;
+ box-sizing: border-box;
   height: 300px;
   }
 }
@@ -64,12 +67,14 @@ $bg-color: #0a192f;
    .text-apropos{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+    max-width: 350px;
+    width: 100%; 
 
 p{
-  text-align: justify;
-  padding-left:1rem;
+ 
+
 }
    }
   }

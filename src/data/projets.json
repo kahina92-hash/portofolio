@@ -6,7 +6,17 @@
     "picture": "/images/projet-portofolio.png",
     "description": "Créer et développer mon portfolio de développeur",
     "langages": ["React", "JavaScript", "Sass", "Next", "Bootstrap", "Html/Css"],
-    "lien": "https://github.com/kahina92-hash/portofolio.git"
+    "lien": "https://github.com/kahina92-hash/portofolio.git",
+    "demo": "https://kahina92-hash.github.io/portofolio/",
+    "images": [
+      "/images/acceuil-portofolio.PNG",
+      "/images/contact-portofolio.PNG",
+      "/images/projets-portofolio.PNG"
+    ],
+    "Compétences_acquises":[ "Créer un site fullStak Avec Next.js", "Acheter un nom de domaine et déployer mon site en ligne",
+  " Exécuter des requêtes postgreSQL pour ajouter et récupérer des données"
+  ],
+    "context":"La mission de ce projet est la création et la publication en ligne de mon propre portfolio de développeur, me permettant de présenter mon parcours, mes compétences et tous mes projets que j'ai pu réaliser de manière professionnelle."
   },
   {
     "id": "2",
@@ -15,7 +25,11 @@
     "picture": "/images/booki.png",
     "description": "Un projet bancaire innovant",
     "langages": ["React", "Node.js", "MongoDB", "Sass", "Html/Css", "Redux"],
-    "lien": "https://github.com/Kahina24D/ArgentBank-Frontend.git"
+    "lien": "https://github.com/Kahina24D/ArgentBank-Frontend.git",
+    "images": [
+      "/images/argent-bank-1.PNG",
+      "/images/argent-bank-2.PNG"
+    ]
   },
   {
     "id": "3",
@@ -24,7 +38,11 @@
     "picture": "/images/projet-qwenta.png",
     "description": "Planifier le développement d'un site web",
     "langages": ["Agile", "Kanban", "Notion"],
-    "lien": "https://github.com/kahina92-hash/Menu-Marker.git"
+    "lien": "https://github.com/kahina92-hash/Menu-Marker.git",
+    "images": [
+      "/images/menu-maker-1.PNG",
+      "/images/menu-maker-2.PNG"
+    ]
   },
   {
     "id": "4",
@@ -33,7 +51,11 @@
     "picture": "/images/724event.png",
     "description": "Débugger le site d'une agence d'événementiel",
     "langages": ["Html/Css", "JavaScript", "Sass", "React"],
-    "lien": "https://github.com/kahina92-hash/724EVENTS.git"
+    "lien": "https://github.com/kahina92-hash/724EVENTS.git",
+    "images": [
+      "/images/724events-1.PNG",
+      "/images/724events-2.PNG"
+    ]
   },
   {
     "id": "5",
@@ -42,7 +64,11 @@
     "picture": "/images/Nina_Carducci.png",
     "description": "Optimiser le référencement d'un site de photographe",
     "langages": ["Html/Css", "JavaScript", "SEO", "Accessibilite"],
-    "lien": "https://github.com/kahina92-hash/Nina-Carducci.git"
+    "lien": "https://github.com/kahina92-hash/Nina-Carducci.git",
+    "images": [
+      "/images/nina-carducci-1.PNG",
+      "/images/nina-carducci-2.PNG"
+    ]
   },
   {
     "id": "6",
@@ -51,7 +77,11 @@
     "picture": "/images/booki.png",
     "description": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
     "langages": ["Html/Css", "Figma"],
-    "lien": "https://github.com/kahina92-hash/Booki.git"
+    "lien": "https://github.com/kahina92-hash/Booki.git",
+    "images": [
+      "/images/booki-1.PNG",
+      "/images/booki-2.PNG"
+    ]
   },
   {
     "id": "7",
@@ -60,7 +90,11 @@
     "picture": "/images/oMyfood.png",
     "description": "Améliorer l'interface d'un site mobile avec des animations CSS",
     "langages": ["Html/Css", "Sass", "Figma"],
-    "lien": "https://github.com/kahina92-hash/ohMyfood.git"
+    "lien": "https://github.com/kahina92-hash/ohMyfood.git",
+    "images": [
+      "/images/ohmyfood-1.PNG",
+      "/images/ohmyfood-2.PNG"
+    ]
   },
   {
     "id": "8",
@@ -69,7 +103,11 @@
     "picture": "/images/kasa.png",
     "description": "Créer une application web de location immobilière avec React",
     "langages": ["React", "JavaScript", "Html/Css"],
-    "lien": "https://github.com/kahina92-hash/kasa.git"
+    "lien": "https://github.com/kahina92-hash/kasa.git",
+    "images": [
+      "/images/kasa-1.PNG",
+      "/images/kasa-2.PNG"
+    ]
   },
   {
     "id": "9",
@@ -78,6 +116,10 @@
     "picture": "/images/Sophie-Buel.png",
     "description": "Créer une page web dynamique avec JavaScript",
     "langages": ["React", "JavaScript", "Html/Css"],
-    "lien": "https://github.com/kahina92-hash/sophie_buel.git"
+    "lien": "https://github.com/kahina92-hash/sophie_buel.git",
+    "images": [
+      "/images/sophie-bluel-1.PNG",
+      "/images/sophie-bluel-2.PNG"
+    ]
   }
 ]

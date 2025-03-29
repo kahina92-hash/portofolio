@@ -1,0 +1,30 @@
+.section-infos{
+    
+display: flex;
+flex-direction: column;
+margin-top: 3rem;
+.cadre-carousel{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contexte-projet{
+background-color: white;
+max-width: 800px;
+margin: 3rem auto;
+padding-left: 1rem;
+padding-right: 1rem; 
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;  /* Espace sous les titres */
+  }
+ 
+ p,ul{margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+ li {
+    margin-left: 20px; /* Pour décaler légèrement les items de la liste */
+  }
+}
+    
+}

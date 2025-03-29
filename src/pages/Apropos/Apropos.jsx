@@ -10,14 +10,15 @@ const Apropos = () => {
        
 
         <p>
-          Bonjour à tous, je suis <strong> Kahina SAIDI </strong> et je réside à <strong>Metz</strong> , en France.
+          Bonjour à tous, je suis <strong> Kahina SAIDI </strong> et je réside à <strong>Metz</strong> ,
+          en France.
           Récemment diplômée de la formation d'intégratrice web chez
-          OpenClassrooms, j'ai acquis des compétences solides dans le domaine du
-          développement web. Je suis désormais à la recherche d'une opportunité
-          professionnelle en tant que développeuse web frontend. Je suis
+          OpenClassrooms,j'ai acquis des compétences solides dans le domaine du
+          développement web.Je suis désormais à la recherche d'une opportunité
+          professionnelle en tant que développeuse web frontend.Je suis
           passionnée par l'idée de continuer à développer mes compétences et de
           contribuer à des projets innovants qui repoussent les limites de la
-          technologie web.<br/> À part coder, j'aime aussi :<br/> ✨ Apprendre de
+          technologie web.<br/>À part coder,j'aime aussi :<br/> ✨ Apprendre de
           nouvelles compétences encore et encore... 🤷‍♀️,<br/> ✈️ Voyager <br/> 📚 Lire
         </p>
         <img src={photoappropos} alt="image-apropos"/>
