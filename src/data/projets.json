@@ -28,8 +28,8 @@
     "lien": "https://github.com/Kahina24D/ArgentBank-Frontend.git",
     "images": [
       "/images/argent-bank1.webp",
-      "/images/argent-bank2.webp",
-       "/images/argent-bank3.webp"
+      "/images/argent_bank2.webp",
+       "/images/argent_bank3.webp"
     ],
     "Compétences_acquises":[ " Afficher les données du backend sur l'interface via des appels API", "Configurer des routes API pour la communication client / serveur",
     "  Découverte de Swagger pour documenter et décrire les différentes routes et actions nécessaires pour l'API"

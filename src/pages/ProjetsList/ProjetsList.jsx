@@ -6,7 +6,9 @@ import projets from '../../data/projets.json'; // Assurez-vous que le chemin est
 function ProjetsList() {
   return (
     <div className="container-projets">
-      <h1>Mes Projets</h1>
+      <h1>
+        Mes <strong>Projets</strong>
+      </h1>
       <p>Voici quelques projets sur lesquels j'ai récemment travaillé.</p>
 
       {/* Liste des langages utilisés */}

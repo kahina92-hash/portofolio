@@ -45,7 +45,7 @@ function Cadre({
         {/* Affichage des informations */}
         <div className="infots-projet">
           <h2>{projet.title}</h2>
-          <p>{projet.date}</p>
+          <p className="date">{projet.date}</p>
           <p>{projet.description}</p>
 
           <ul>

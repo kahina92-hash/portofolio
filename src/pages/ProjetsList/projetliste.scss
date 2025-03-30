@@ -1,8 +1,7 @@
 $primary-rgb: 0 21 79; 
 $primary-color: rgb($primary-rgb);
 .container-projets {
-    padding: 20px;
- // Fond sombre
+   
     color: white;
     text-align: center;
     display: flex;
@@ -12,6 +11,9 @@ $primary-color: rgb($primary-rgb);
     h1 {
       margin-bottom: 20px;
       font-size: 2rem;
+      strong{
+        color: rgba(124, 214, 101, 0.6);
+      }
     }
   ul{
    
@@ -62,11 +64,12 @@ $primary-color: rgb($primary-rgb);
   @media (max-width: 768px) {
     .container-projets {
       margin: auto;
+      width: 100%;
+       box-sizing: border-box;
       ul{
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       width: 100%;
-       box-sizing: border-box;
+       
      
       }
       .list-projets{
