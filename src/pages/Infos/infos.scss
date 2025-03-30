@@ -28,3 +28,29 @@ h2 {
 }
     
 }
+@media (max-width: 1268px) {
+  .section-infos{
+
+display: flex;
+flex-direction: column;
+.cadre-carousel{
+  display: flex;
+ flex-direction: column;
+ .cadre{
+  max-width: 100%;
+ }
+}
+}
+}
+@media screen and (max-width: 600px) {
+  .cadre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .test {
+    max-width: 90%;  /* Ajuste la largeur pour ne pas toucher les bords */
+  }
+}

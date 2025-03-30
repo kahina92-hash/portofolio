@@ -25,7 +25,7 @@ function Infos() {
             projet={projet}
             hideImage={true}
             style={{}}
-            width="400px"
+            width=""
             height="auto"
             className="test"
             showButton={true}
