@@ -16,7 +16,8 @@
     "Compétences_acquises":[ "Créer un site fullStak Avec Next.js", "Acheter un nom de domaine et déployer mon site en ligne",
   " Exécuter des requêtes postgreSQL pour ajouter et récupérer des données"
   ],
-    "context":"La mission de ce projet est la création et la publication en ligne de mon propre portfolio de développeur, me permettant de présenter mon parcours, mes compétences et tous mes projets que j'ai pu réaliser de manière professionnelle."
+    "context":"La mission de ce projet est la création et la publication en ligne de mon propre portfolio de développeur, me permettant de présenter mon parcours, mes compétences et tous mes projets que j'ai pu réaliser de manière professionnelle.",
+   "cv":"/images/cv.pdf"
   },
   {
     "id": "2",
