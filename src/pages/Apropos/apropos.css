@@ -1,1 +1,58 @@
-.container-apropos{color:#fff;width:100%;box-sizing:border-box}.container-apropos h1{font-size:2rem;margin-bottom:1.5rem;text-align:center}.container-apropos .text-apropos{display:flex;justify-content:space-evenly;align-items:center;font-size:1.2rem;line-height:1.8}.container-apropos .text-apropos p{text-align:justify;margin-bottom:1.5rem;max-width:800px}.container-apropos .text-apropos strong{color:#fbbf24}.container-apropos .text-apropos ul{list-style:none;padding:0;margin-top:20px}.container-apropos .text-apropos ul li{display:flex;align-items:center;gap:10px;font-size:1.2rem}.container-apropos img{max-width:100%;box-sizing:border-box;height:300px}@media(max-width: 768px){.container-apropos .text-apropos{display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%}.container-apropos .text-apropos p{text-align:center;padding:1rem}}
+@charset "UTF-8";
+.container-apropos {
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container-apropos h1 {
+  font-size: 2rem; /* Ajuste la taille du titre */
+  margin-bottom: 1.5rem; /* Ajoute un espace sous le titre */
+  text-align: center;
+}
+.container-apropos .text-apropos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Centrer tous les éléments horizontalement */
+  /* Centrer les éléments verticalement */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  /* Ajoute un peu de padding pour espacer les éléments des bords */
+}
+.container-apropos .text-apropos p {
+  text-align: justify; /* Justifie le texte */
+  margin-bottom: 1.5rem; /* Ajoute de l'espace sous le paragraphe */
+  max-width: 800px; /* Limite la largeur du texte pour une meilleure lisibilité */
+}
+.container-apropos .text-apropos strong {
+  color: #fbbf24; /* Change la couleur des textes forts */
+}
+.container-apropos .text-apropos ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.container-apropos .text-apropos ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+.container-apropos img {
+  max-width: 100%;
+  box-sizing: border-box;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .container-apropos .text-apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container-apropos .text-apropos p {
+    text-align: center;
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=apropos.css.map */

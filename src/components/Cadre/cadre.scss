@@ -38,9 +38,11 @@ $primary-color: rgb($primary-rgb);
 
     p {
       font-size: 1rem;
+      max-width: 100%;
+      width: 100%;
       color: #ffffff;
-      text-align: justify;
-      line-height: 1.5rem;
+      text-align: left;
+      line-height: 1.8rem;
      
     }
     .date{

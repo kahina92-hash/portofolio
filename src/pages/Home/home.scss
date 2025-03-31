@@ -11,9 +11,13 @@
       display: flex;
      justify-content: space-around;
      margin-top: 2rem;
+     color: #737373;
+     h1{
+      color: #737373;
+     }
       .hello {
         font-size: 1.5rem;
-        color: white;
+        color: #737373;
         position: relative;
         min-height: 90px;
         
@@ -29,9 +33,15 @@
           top: 0;
           width: 120%;
           font-size: 1.5rem;
-          font-weight: bold;
-          color: orange;
+          font-weight: 500;
+          color:#FF8C00;
           white-space: nowrap;
+        }
+        .me{
+          color: #737373;/* Blanc cassé */
+          font-size: 1.5rem; /* Augmente légèrement la taille */
+          font-weight: 500; /* Rend le texte plus lisible */
+
         }
       }
       img{
@@ -47,8 +57,9 @@
     }
     
     .name {
-      color: rgba(124, 214, 101, 0.6);
-      font-size: 2rem;
+      color: #006400; /* Vert plus foncé */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      font-size: 1.5rem;
     }
     
     .btn-contact {
@@ -59,13 +70,14 @@
       gap: 1rem;
       
       .btn1, .btn2 {
-        width: 150px;
+        width: 180px;
         padding: 0.8rem;
         border-radius: 15px;
         position: relative;
-        background-color: rgba(124, 214, 101, 0.6); 
-        color: white;
-        font-weight: 600;
+        background-color:#FF8C00;; 
+        color: #080808;
+        font-weight: 700;
+        font-size: 1rem;
       }
     }
 
@@ -73,7 +85,7 @@
       display: flex;
       margin-top: -6rem;
       h2, p {
-        color: white;
+        color: #737373;
       }
       
       .presentation-texte {
@@ -104,13 +116,13 @@
       }
       
       .btn2 {
-        background-color: rgba(124, 214, 101, 0.6); 
+        background-color: rgba(65, 248, 19, 0.6); 
       }
     }
     
     .content h1 {
       font-size: 3rem;
-      color: white;
+      color: #737373;
       line-height: 1.2;
       position: relative;
       opacity: 1;
@@ -125,6 +137,7 @@
         width: 150px;
         padding: 0.1rem;
         border-radius: 15px;
+        color: #006400;
       }
     }
     
@@ -135,11 +148,13 @@
       align-items: center;
       
       h2 {
-        color: white;
+        color: #737373;
         font-size: 2rem;
 
         span {
-          color: rgba(124, 214, 101, 0.6); 
+   
+      color: #006400; /* Vert plus foncé */
+
         }
       }
 
@@ -168,10 +183,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(124, 214, 101, 0.6); 
+            background-color: #FF8C00;; 
             display: flex;
             justify-content: center;
             align-items: center;
+            
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
             z-index: 1;
@@ -182,7 +198,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
+            color: #080808;
             font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
@@ -221,8 +237,8 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        background-color: rgba(124, 214, 101, 0.6);
-        color: white;
+        background-color: #66FF66;
+        color: #474747;
         padding: 1rem 1.5rem;
         border-radius: 10px;
         font-weight: bold;
@@ -276,7 +292,7 @@
        margin-top: 2rem;
         .hello {
           font-size: 1.5rem;
-          color: white;
+          color: #737373;
           position: relative;
           min-height: 90px;
           
@@ -326,8 +342,8 @@
           padding: 0.8rem;
           border-radius: 15px;
           position: relative;
-          background-color: rgba(124, 214, 101, 0.6); 
-          color: white;
+          background-color:#FF8C00;; 
+          color: black;
           font-weight: 600;
         }
       }
@@ -336,8 +352,9 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
+        gap: -9rem;
         h2, p {
-          color: white;
+          color: #737373;
         }
         
         .presentation-texte {
@@ -355,6 +372,7 @@
           }
         }
         .logo {
+          margin-top: -9rem;
           width: 100%;
         }
       }
@@ -372,13 +390,13 @@
         }
         
         .btn2 {
-          background-color: rgba(124, 214, 101, 0.6); 
+          background-color: #006400;; 
         }
       }
       
       .content h1 {
         font-size: 3rem;
-        color: white;
+        color: #737373;
         line-height: 1.2;
         position: relative;
         opacity: 1;
@@ -403,12 +421,13 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        margin-top: -6rem;
         h2 {
-          color: white;
+          color: #737373;
           font-size: 2rem;
   
           span {
-            color: rgba(124, 214, 101, 0.6); 
+            color: #006400;; 
           }
         }
   
@@ -438,7 +457,7 @@
               left: 0;
               width: 100%;
               height: 100%;
-              background-color: rgba(124, 214, 101, 0.6); 
+              background-color:#006400;; 
               display: flex;
               justify-content: center;
               align-items: center;
@@ -452,7 +471,7 @@
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              color: white;
+              color: #737373;
               font-size: 1.8rem;
               font-weight: bold;
               text-align: center;
@@ -491,7 +510,7 @@
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
-          background-color: rgba(124, 214, 101, 0.6);
+          background-color:#50f350;;
           color: white;
           padding: 1rem 1.5rem;
           border-radius: 10px;

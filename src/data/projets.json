@@ -4,7 +4,8 @@
     "title": "Portfolio",
     "date": "Mars 2025",
     "picture": "/images/projet-portofolio.webp",
-    "description": "Créer et développer mon portfolio de développeur",
+    "description": "Creer et devlopper mon portofolio de developpeur ",
+   
     "langages": ["React", "JavaScript", "Sass", "Next", "Bootstrap", "Html/Css"],
     "lien": "https://github.com/kahina92-hash/portofolio.git",
     "demo": "https://kahina92-hash.github.io/portofolio/",
@@ -123,6 +124,7 @@
       "/images/ohmyfood2.webp",
        "/images/ohmyfood3.webp"
     ],
+    "demo":"https://kahina24d.github.io/projet_ohmyfood/",
     "Compétences_acquises":[ " Comprendre Git et GitHub ainsi que le versionnage du projet", "Comprendre et utiliser Sass",
     " Utilisation des transitions et des keyframes pour construire des animations modernes et fluides"
     ],
