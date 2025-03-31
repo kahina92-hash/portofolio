@@ -136,6 +136,7 @@
     "description": "Créer une application web de location immobilière avec React",
     "langages": ["React", "JavaScript", "Html/Css"],
     "lien": "https://github.com/kahina92-hash/kasa.git",
+    "demo": " https://kahina92-hash.github.io/kasa/",
     "images": [
       "/images/kasa1.webp",
       "/images/kasa2.webp",
