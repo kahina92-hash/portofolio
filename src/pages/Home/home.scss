@@ -428,7 +428,7 @@
       
       .mes-projet {
         display: flex;
-        flex-direction: column;
+
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -446,6 +446,8 @@
         .projet-img {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
           gap: 1.5rem;
   
           .image-container {
