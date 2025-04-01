@@ -271,7 +271,19 @@
     opacity: 0; 
   }
 }
+@media (max-width: 1268px) {
+  
+  .mes-projet {
+.projet-img{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+  }
 
+
+
+}
 @media (max-width: 768px) {
   .container-aceeuil {
     padding: 0;
