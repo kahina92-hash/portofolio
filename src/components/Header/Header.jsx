@@ -30,14 +30,15 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
               Accueil
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/projets" end onClick={closeMenu}>
-              Projets
-            </NavLink>
-          </li>
+        
           <li>
             <NavLink to="/apropos" end onClick={closeMenu}>
               <FontAwesomeIcon icon={faUser} className="fauser" /> À Propos
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/projets" end onClick={closeMenu}>
+              Projets
             </NavLink>
           </li>
           <li>
